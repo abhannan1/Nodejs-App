@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Document</title>
+</head>
+<body>
+   <main>
+    <form action="/addMessage" method="post" class="form">
+        <h1>Contact Now</h1>
+        <div class="email-con">
+            <label for="email">Email:</label>
+            <input type="email" name="email" class="email" placeholder="enter your email here" required>
+        </div>
+        <div class="tittle-con">
+            <label for="tittle">Tittle:</label>
+            <input type="text" name="tittle" class="tittle" placeholder="enter tittle for your Message here" required>
+        </div>
+        <div class="message-con">
+            <label for="text-area" style="margin-bottom: 4px;">Message:</label>
+            <textarea type="text-area" name="message" class="message" placeholder="enter your message here" required rows="5"></textarea>
+        </div>
+        <button type="submit">Send Message</button>
+    </form>
+    <form action="/logout" method="post" class="form">
+        <button type="submit">logout</button>
+    </form>
+   </main>
+</body>
+</html>
